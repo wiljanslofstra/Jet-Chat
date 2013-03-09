@@ -1,9 +1,10 @@
 Template.controls.events({
-	'click #logout': function() {
+	'click #logout': function(e,t) {
+		e.preventDefault();
 		// Logout current user
 		Meteor.logout(function(err){
-			if(error) {
-				console.log(error);
+			if(err) {
+				console.log(err);
 			}
 		});
 	}
