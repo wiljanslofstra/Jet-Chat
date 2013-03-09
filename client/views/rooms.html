@@ -1,0 +1,19 @@
+<template name="rooms">
+	<div class="room-list"> 
+	  <h1>Rooms</h1>
+		<ul class="rooms-list">
+		  {{#each rooms}}
+		  	{{#if isCurrentRoom}}
+		  		<li id="{{_id}}" class="active">{{name}}</li>
+		  	{{else}}
+		  		<li id="{{_id}}">{{name}}</li>
+		  	{{/if}}
+		  {{/each}}
+		</ul>
+		{{#if add_room}}
+			<input type="text" id="room-name" placeholder="Room name..." />
+		{{else}}
+			<a href="#" id="add-name">&plus; Add new room</a>
+		{{/if}}
+	</div>
+</template>

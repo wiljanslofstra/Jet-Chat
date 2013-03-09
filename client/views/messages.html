@@ -1,0 +1,33 @@
+<template name="messages">
+	{{#if in_room}}
+		<header>
+			<h1>{{room_name}}</h1>
+		</header>
+		<!-- <input type="file" value="Upload file" id="file-upload" /> -->
+		<ul class="message-list">
+			{{#each messages}}
+				<li>
+					<span class="username">{{user}}</span> 
+					<span class="message">{{message}}</span>
+
+					{{#if geoLocation}}
+						<span class="icon icon-map-marker">
+						
+							<div id="map" class="map" data-lat="{{lat}}" data-long="{{long}}" style="width: 300px; height: 300px;">
+							</div>
+
+						</span>
+					{{/if}}
+
+					{{#if karmaGiven}}
+						<span class="icon icon-heart"></span>
+					{{else}}
+						<span class="icon icon-heart-empty"></span>
+					{{/if}}
+				</li>
+			{{/each}}
+		</ul>
+
+		<input type="text" id="message-text" placeholder="Your message..." />
+	{{/if}}
+</template>

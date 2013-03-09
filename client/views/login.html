@@ -1,0 +1,22 @@
+<template name="login">
+	{{#unless isLoggedIn}}
+		<div class="login-background">
+		</div>
+	{{/unless}}
+
+	{{#if isLoggedIn}}
+		<div class="login">
+	{{else}}
+		<div class="login active">
+	{{/if}}
+		<i class="icon icon-fighter-jet logo"></i>
+		<h1>Jet Chat</h1>
+
+		{{#if isLoggedIn}}
+			<p>Logged in</p>
+		{{/if}}
+
+		<a href="#twitter" id="twitter"><i class="icon icon-twitter"></i> Login with Twitter</a>
+		<a href="#facebook" id="facebook"><i class="icon icon-facebook"></i> or Facebook</a>
+	</div>
+</template>

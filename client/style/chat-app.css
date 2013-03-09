@@ -1,0 +1,420 @@
+body {
+	background: url('../../img/bg-small.jpg');
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	height: 100%;
+	margin: 0;
+
+	-webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+html {
+	height: 100%;
+}
+
+.login {
+	background: #fff;
+	border: 1px solid #ccc;
+	box-shadow: 1px 1px 8px rgba(20,20,20,0.4);
+	color: #333;
+	height: 356px;
+	left: 50%;
+	padding: 50px;
+	margin: -228px 0 0 -200px;
+	position: absolute;
+	top: -50%;
+	width: 300px;
+	z-index: 9999;
+
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+.login.active {
+	top: 50%;
+}
+
+.login h1 {
+	text-align: center;
+	margin: 1em 0 2em;
+}
+
+.login .logo {
+	color: #c3613d;
+	display: inline-block;
+	font-size: 5em;
+	padding: 0;
+	text-align: center;
+	width: 100%;
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+}
+
+.login-background {
+	background: #333;
+	background: rgba(30,30,30,0.8);
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 9000;
+}
+
+.login #twitter, .login #facebook {
+	border-radius: 5px;
+	color: #fff;
+	display: block;
+	padding: 1em 3% 1em 0;
+	margin: 1em 0;
+	text-align: center;
+	text-decoration: none;
+	width: 94%;
+}
+
+.login #twitter .icon, .login #facebook .icon {
+	font-size: 1.4em;
+	padding: 0 0.5em;
+	vertical-align: middle;
+}
+
+.login #twitter {
+	border: 1px solid #0083ab;
+	background: #27bfee;
+	background: -moz-linear-gradient(top, #27bfee 0%, #00a0d1 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#27bfee), color-stop(100%,#00a0d1));
+	background: -webkit-linear-gradient(top, #27bfee 0%,#00a0d1 100%);
+	background: -o-linear-gradient(top, #27bfee 0%,#00a0d1 100%);
+	background: -ms-linear-gradient(top, #27bfee 0%,#00a0d1 100%);
+	background: linear-gradient(to bottom, #27bfee 0%,#00a0d1 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#27bfee', endColorstr='#00a0d1',GradientType=0 );
+}
+
+.login #twitter:active {
+	background: #00a0d1;
+	background: -moz-linear-gradient(top, #00a0d1 0%, #27bfee 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#00a0d1), color-stop(100%,#27bfee));
+	background: -webkit-linear-gradient(top, #00a0d1 0%,#27bfee 100%);
+	background: -o-linear-gradient(top, #00a0d1 0%,#27bfee 100%);
+	background: -ms-linear-gradient(top, #00a0d1 0%,#27bfee 100%);
+	background: linear-gradient(to bottom, #00a0d1 0%,#27bfee 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00a0d1', endColorstr='#27bfee',GradientType=0 );
+}
+
+.login #twitter:hover {
+	background: #57cef2;
+	background: -moz-linear-gradient(top, #57cef2 0%, #00a0d1 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#57cef2), color-stop(100%,#00a0d1));
+	background: -webkit-linear-gradient(top, #57cef2 0%,#00a0d1 100%);
+	background: -o-linear-gradient(top, #57cef2 0%,#00a0d1 100%);
+	background: -ms-linear-gradient(top, #57cef2 0%,#00a0d1 100%);
+	background: linear-gradient(to bottom, #57cef2 0%,#00a0d1 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#57cef2', endColorstr='#00a0d1',GradientType=0 );
+}
+
+.login #facebook {
+	border: 1px solid #2a4378;
+	background: #4d72bc;
+	background: -moz-linear-gradient(top, #4d72bc 0%, #3b5998 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4d72bc), color-stop(100%,#3b5998));
+	background: -webkit-linear-gradient(top, #4d72bc 0%,#3b5998 100%);
+	background: -o-linear-gradient(top, #4d72bc 0%,#3b5998 100%);
+	background: -ms-linear-gradient(top, #4d72bc 0%,#3b5998 100%);
+	background: linear-gradient(to bottom, #4d72bc 0%,#3b5998 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d72bc', endColorstr='#3b5998',GradientType=0 );
+}
+
+.login #facebook:active {
+	background: #3b5998;
+	background: -moz-linear-gradient(top, #3b5998 0%, #4d72bc 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3b5998), color-stop(100%,#4d72bc));
+	background: -webkit-linear-gradient(top, #3b5998 0%,#4d72bc 100%);
+	background: -o-linear-gradient(top, #3b5998 0%,#4d72bc 100%);
+	background: -ms-linear-gradient(top, #3b5998 0%,#4d72bc 100%);
+	background: linear-gradient(to bottom, #3b5998 0%,#4d72bc 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3b5998', endColorstr='#4d72bc',GradientType=0 );
+}
+
+.login #facebook:hover {
+	background: #6d90d6;
+	background: -moz-linear-gradient(top, #6d90d6 0%, #3b5998 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#6d90d6), color-stop(100%,#3b5998));
+	background: -webkit-linear-gradient(top, #6d90d6 0%,#3b5998 100%);
+	background: -o-linear-gradient(top, #6d90d6 0%,#3b5998 100%);
+	background: -ms-linear-gradient(top, #6d90d6 0%,#3b5998 100%);
+	background: linear-gradient(to bottom, #6d90d6 0%,#3b5998 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6d90d6', endColorstr='#3b5998',GradientType=0 );
+}
+
+.rooms, .chat {
+	float: left;
+	padding: 1em 0;
+}
+
+.chat {
+	background: #f9f9f9;
+	box-shadow: -1px 0px 5px rgba(20,20,20,0.4);
+	height: 100%;
+	padding: 0;
+	position: relative;
+	width: 73%;
+}
+
+.chat header {
+	padding: 6.1em 3% 5px;
+	position: fixed;
+	width: 94%;
+}
+
+.chat h1 {
+	margin: 0;
+}
+
+.room-list {
+	position: fixed;
+	top: 75px;
+	width: 27%;
+}
+
+.rooms {
+	padding-top: 0;
+	width: 27%;
+}
+
+.rooms ul, .chat ul {
+	list-style: none;
+	padding: 0;
+}
+
+.rooms h1 {
+	color: #fff;
+	margin-left: 3%;
+}
+
+.chat ul {
+	position: relative;
+	top: 161px;
+	margin: 0;
+	overflow: scroll;
+}
+
+.chat ul li {
+	background: #efefef;
+	border-top: 1px solid #ddd;
+	padding: 0.5em 1em;
+	position: relative;
+	clear: both;
+	min-height: 21px;
+}
+
+.chat li .username {
+	color: #aaa;
+	display: block;
+	float: left;
+	text-align: right;
+	padding-right: 5%;
+	width: 25%;
+}
+
+.chat li .message {
+	display: block;
+	float: left;
+	width: 70%;
+}
+
+.chat li .icon-heart-empty, .chat li .icon-heart, .chat li .icon-map-marker {
+	color: #ccc;
+	position: absolute;
+	right: 11px;
+	top: 11px;
+}
+
+.chat li .hearted {
+	color: #bb5d34;
+}
+
+.chat li .icon-map-marker {
+	right: 44px;
+}
+
+.chat li .icon-map-marker #map {
+	display: none;
+}
+
+.chat li #map {
+	position: absolute;
+	left: -335px;
+	top: -7px;
+	z-index: 9000;
+}
+
+.chat li #map {
+	background: #fff;
+	border: 7px solid #fff;
+	box-shadow: 1px 1px 17px -3px rgba(20,20,20,0.4);
+	padding: 5px;
+}
+.chat li #map:after {
+	left: 100%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.chat li #map:after {
+	border-color: rgba(136, 183, 213, 0);
+	border-left-color: #fff;
+	border-width: 15px;
+	top: 3%;
+	margin-top: -15px;
+}
+
+#room-name {
+	border-radius: 0;
+	padding: 0.8em 3%;
+	width: 96%;
+}
+
+.rooms ul li {
+	background: rgba(250,250,250,0.05);
+	border: none;
+	border-top: 1px solid rgba(250,250,255,0.1);
+	border-bottom: 1px solid rgba(20,20,25,0.2);
+	border-radius: 0;
+	color: #fff;
+	padding: 0.5em 3%;
+	margin: 0;
+	width: 94%;
+}
+
+.rooms ul li:hover {
+	background: rgba(250,250,250,0.2);
+	cursor: pointer;
+}
+
+.rooms ul li.active {
+	background: rgba(255,250,250,0.3);
+}
+
+.controls {
+	color: #fff;
+	height: 40px;
+	line-height: 40px;
+	padding: 5px 3%;
+}
+
+.controls a {
+	border: 1px solid #dbacae;
+	border-radius: 5px;
+	box-shadow: 1px 1px 1px rgba(20,20,20,0.4);
+	color: #fff;
+	display: inline-block;
+	float: right;
+	padding: 0.3em 0.5em;
+	line-height: 1em;
+	margin: 5px;
+	text-decoration: none;
+	vertical-align: middle;
+	text-shadow: 0px -1px 1px rgba(20,20,20,0.3);
+	background: #d2abad;
+	background: -moz-linear-gradient(top, #d2abad 0%, #ac8484 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d2abad), color-stop(100%,#ac8484));
+	background: -webkit-linear-gradient(top, #d2abad 0%,#ac8484 100%);
+	background: -o-linear-gradient(top, #d2abad 0%,#ac8484 100%);
+	background: -ms-linear-gradient(top, #d2abad 0%,#ac8484 100%);
+	background: linear-gradient(to bottom, #d2abad 0%,#ac8484 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2abad', endColorstr='#ac8484',GradientType=0 );
+}
+
+#message-text {
+	border: none;
+	border-top: 1px solid #ddd;
+	display: inline-block;
+	padding: 2%;
+	position: absolute;
+	bottom: 0;
+	width: 96%;
+}
+
+#add-name {
+	background: rgba(250,250,250,0.05);
+	color: #fff;
+	display: block;
+	text-decoration: none;
+	padding: 0.5em 3%;
+	width: 94%;
+}
+
+@media screen and (min-width: 600px) {
+	body {
+		background: url('../../img/bg.jpg');
+		-webkit-background-size: 100% 100%;
+	    -moz-background-size: 100% 100%;
+	    -o-background-size: 100% 100%;
+	    background-size: 100% 100%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.rooms {
+		overflow: hidden;
+		width: 100%;
+	}
+
+	.room-list {
+		position: static;
+		width: 100%;
+	}
+
+	.chat {
+		width: 100%;
+	}
+
+	.chat header {
+		position: static;
+		padding: 1em 3% 5px;
+	}
+
+	.chat ul {
+		top: 50px;
+		overflow: visible;
+	}
+
+	.chat ul li {
+		min-height: 44px;
+	}
+
+	.chat li .username, .chat li .message {
+		text-align: left;
+		width: 100%;
+		padding: 0;
+	}
+
+	.chat li .icon {
+		font-size: 1.4em;
+	}
+
+	.chat li #map {
+		height: 200px !important;
+		left: -235px;
+		top: 0;
+		width: 200px !important;
+	}
+
+	#message-text {
+		padding: 6px;
+		top: 75px;
+		height: 25px;
+		bottom: auto;
+	}
+}
+
