@@ -10,7 +10,7 @@ Meteor.startup(function () {
 		},
 		update: function(userId, docs, fields, modifier) {
 			// TODO: Test for admin or current user
-			return onlyIfAdmin(userId);
+			return true;
 		},
 		remove: function(userId, docs) {
 			// TODO: Test for admin or current user
