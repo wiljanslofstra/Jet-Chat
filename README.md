@@ -3,7 +3,7 @@
 Chat application with multiple rooms, Facebook and Twitter login, and geolocation.
 
 ## How it works
-1. Enter your social api information in server/services.js
+1. Enter your social api information in [server/services.js](server/services.js)
 2. Run the application with meteorite
 ```
 mrt
@@ -14,4 +14,4 @@ mrt deploy yourappname.meteor.com
 ```
 
 ## Issues
-Open an issue on the issues page or contact me on Twitter @wiljanslofstra.
+Open an issue on the issues page or contact me on Twitter [@wiljanslofstra](https://twitter.com/wiljanslofstra).
